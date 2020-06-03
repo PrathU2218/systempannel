@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'phone_field',
     'corsheaders',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,5 @@ EMAIL_HOST_USER = 'mytestmail917634528@gmail.com'
 EMAIL_HOST_PASSWORD = 'iitbombay123'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
