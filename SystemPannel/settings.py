@@ -28,10 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-TWILIO_ACCOUNT_SID = os.getenv("AC5aab577bef427ed0b653e327323605a8")
-TWILIO_AUTH_TOKEN = os.getenv("02f3fd97eccac502cd99af026e843261")
-TWILIO_NUMBER = os.getenv("(201) 932-0353")
-
 
 # Application definition
 
@@ -135,6 +131,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'root')
 
 EMAIL_HOST = 'smtp.gmail.com'
