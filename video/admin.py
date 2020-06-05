@@ -6,3 +6,4 @@ from .models import Comment, Playlist, Video
 admin.site.register(Comment)
 admin.site.register(Playlist)
 admin.site.register(Video)
+admin.site.register(VideoUpload)
