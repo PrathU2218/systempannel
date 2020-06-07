@@ -1,6 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 from user.models import UserProfile
+from django_slugify_processor.text import slugify
+from django.dispatch import receiver
+from django.conf import settings
+from django.db.models.signals import post_delete, pre_save
+
+
 
 # Create your models here.
 class Playlist(models.Model):

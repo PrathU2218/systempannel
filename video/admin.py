@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Comment, Playlist, Video
+from .models import Comment, Playlist, Video, VideoUpload
 
 # Register your models here.
 
