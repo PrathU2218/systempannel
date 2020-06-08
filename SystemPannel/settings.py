@@ -78,6 +78,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'SystemPannel.wsgi.application'
+
 AUTH_USER_MODEL = 'user.UserProfile'
 
 
@@ -141,3 +142,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+SLUGIFY_PROCESSORS = [
+   'project.app.slugify_processors.my_processor'
+]

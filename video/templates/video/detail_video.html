@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<style type="text/css">
+	
+	.card{
+		max_width: 700px;
+	}
+
+	.container{
+		padding: 20px;
+	}
+</style>
+
+<div class="container">
+	<div class="row">
+
+		<!--Videopost-->
+		<div class="card m-auto">
+			
+			<video width='400' class="card-img-top" controls>
+				<source src="{{video_post.videofile.url}}"  type='video/mp4'>
+				Your browser does not support the video tag.
+			</video>
+			<div class="card-body my-2">
+				<h2 class="card-title"> {{video_post.title}}</h2>
+				<p class="card-text"> {{video_post.body |safe}}</p>
+				{% if video_post.author == request.user %}
+					<a href="{% url 'video:update' video_post.slug %}" class ="btn btn-primary">Upload</a>
+				{% endif  %}
+
+				
+			</div>
+			<div class="card-footer text-muted">
+				Updated on {{video_post.date_updated}} by {{video_post.author}}
+				
+			</div>
+
+		<!--end Blog post -->	
+		</div>
+		
+	</div>
+	
+</div>
+
+{% endblock content %}
