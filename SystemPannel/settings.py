@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user.apps.UserConfig',
     'video.apps.VideoConfig',
+    'questions.apps.QuestionsConfig',
     'rest_framework',
     'phone_field',
     'corsheaders',
