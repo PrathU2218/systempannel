@@ -1,11 +1,11 @@
 {% extends 'video/base.html' %}
-
+ 
 {% block content %}
-
+    <h2>Home </h2>
     {% for playlist in playlists %}
         <h1> {{ playlist.name }} </h1>
         <p> Created by {{ playlist.creator }} </p>
-        <p> Views: {{ playlist.viewed_by }}, Size: {{ playlist.size }}, Tags: {{ playlist.tags }} </p>
+        <p> Views: {{ playlist.viewed_by }}, Size: {{ playlist.size }}, Tags: {{ playlist.Tags }} </p>
     {% endfor %}
 
 {% endblock content %}

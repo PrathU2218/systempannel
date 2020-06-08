@@ -11,11 +11,11 @@ from django.views.generic import (
 
 
 
-
+ 
 # Create your views here.
 def home(request):
     context = {
-        'playlist': Playlist.objects.all()
+        'playlists': Playlist.objects.all()
     }
     return render(request, 'video/home.html', context)
 
